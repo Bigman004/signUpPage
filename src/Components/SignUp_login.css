@@ -1,0 +1,138 @@
+.header {
+  top: 0;
+  position: sticky;
+  background-color: #0077ffc0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+}
+.heading {
+  color: #3c009d;
+  font-size: 48px;
+  font-weight: 600;
+  justify-self: center;
+  margin-top: 0px;
+}
+.start {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+li {
+  padding: 12px 30px;
+}
+.info-action {
+  color: #1310c949;
+  background-color: white;
+  border-radius: 7px;
+}
+.form {
+  margin: auto;
+  background-color: #1310c949;
+  max-width: 50%;
+  border-radius: 3em;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "first-name-input last-name-input"
+    "date-of-birth-input tel-input"
+    "email-input email-input"
+    "password-input confirm-password-input"
+    "form-bottom form-bottom";
+  gap: 1em;
+}
+.login-form {
+  margin: auto;
+  background-color: #1310c949;
+  max-width: 40%;
+  border-radius: 3em;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.first-name-input {
+  grid-area: first-name-input;
+}
+.last-name-input {
+  grid-area: last-name-input;
+}
+.email-input {
+  grid-area: email-input;
+}
+.password-input {
+  grid-area: password-input;
+}
+.confirm-password-input {
+  grid-area: confirm-password-input;
+}
+.form-bottom {
+  grid-area: form-bottom;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.input img {
+  margin: 0px 30px;
+}
+.input {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background: #eaeaea;
+  border-radius: 6px;
+}
+.input input {
+  height: 50px;
+  width: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 19px;
+}
+.button-section {
+  display: flex;
+  flex-wrap: nowrap;
+}
+button {
+  width: 30%;
+  margin: auto;
+  padding: 2%;
+  margin-top: 1.5em;
+  border: none;
+  border-radius: 7px;
+  background-color: #0077ffee;
+  color: white;
+  font-size: 14px;
+}
+.text {
+  margin-top: 2em;
+}
+.text-info {
+  margin: auto;
+  color: #0a0a0a;
+  font-size: 14px;
+}
+a {
+  color: #3e0fbe49;
+}
+
+@media screen and (max-width: 768px) {
+  .form,
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+  }
+  li {
+    padding: 12px 10px;
+  }
+}
